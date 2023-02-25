@@ -4,11 +4,36 @@
   font-family: 'Poppins', sans-serif;
 }
 
+:root {
+  --dark-red: rgb(217, 120, 28);
+  --dark-green: hsl(180deg, 81%, 30%);
+}
+
 .logo {
   width: 30px;
   height: 30px;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: var(--dark-red);
+}
+
 .customers {
   width: 100%;
 }
+
+.title-color {
+  color: var(--dark-red);
+}
+
+.card-text {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+.ul {
+  color: var(--dark-green);
+  list-style: none;
+}
+

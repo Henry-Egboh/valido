@@ -5,29 +5,17 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import pic from '../Assets/signal.png';
 
-// const Navbar = () => {
-//     return ( 
-//         <div>
-//             <nav className='navbar'>
-//                 <ul>
-//                     <li><Link to='/' className='nav'>Home</Link></li>
-//                     <li><Link to='/' className='nav'>Services</Link></li>
-//                     <li><Link to='/' className='nav'>Recipes</Link></li>
-//                     <li><Link to='/' className='nav'>Menu</Link></li>
-//                     <li><Link to='/' className='nav'>Place an Order</Link></li>
-//                     <li><Link to='/' className='nav'>Delivery</Link></li>
-//                 </ul>
-//             </nav>
-//         </div>
-//      );
-// }
-
 function NavComponent() {
   return (
     <>
     {/* company logo */}
-    <header className='d-flex justify-content-center my-3'>
-      <Link to='/'><img src={pic} alt="logo" className='logo'></img></Link>
+    <header className='d-flex justify-content-center my-md-3'>
+      <Link to='/' className='logo-link'>
+          <div className='d-flex align-items-start justify-content-start gap-1'>
+              <img src={pic} alt="logo" className='logo'></img>
+              <p>Valido</p>
+          </div>
+      </Link>
     </header>
 
     {/* nav contents */}
