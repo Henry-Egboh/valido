@@ -68,26 +68,26 @@ const Menu = () => {
 
     return ( 
         <div className="my-5">
-        <Container>
-        <Row>
-        <Col xs={12} sm={12} lg={4}>
-            <Card>
-                <Card.Header>Customers Satisfaction</Card.Header>
-                <Card.Img variant="top" src={customers} />
-            </Card>
-          {/* <img alt='customers' src={customers} className='customers'></img> */}
-        </Col>
-        <Col xs={12} sm={6} lg={4}>
-            <Card>
-                <Card.Header>Cheap Daily Menu Now!</Card.Header>
-                <Desserts myList={desserts} />
-            </Card>
-        </Col>
-        <Col xs={12} sm={6} lg={4}>
-          <FormComponent />
-        </Col>
-      </Row>
-        </Container>
+          <Container>
+              <Row>
+                  <Col xs={12} sm={12} lg={4}>
+                      <Card>
+                          <Card.Header>Customers Satisfaction</Card.Header>
+                          <Card.Img variant="top" src={customers} />
+                      </Card>
+                    {/* <img alt='customers' src={customers} className='customers'></img> */}
+                  </Col>
+                  <Col xs={12} sm={6} lg={4}>
+                      <Card>
+                          <Card.Header>Cheap Daily Menu Now!</Card.Header>
+                          <Desserts myList={desserts} />
+                      </Card>
+                  </Col>
+                  <Col xs={12} sm={6} lg={4}>
+                    <FormComponent />
+                  </Col>
+              </Row>
+          </Container>
         </div>
      );
 }

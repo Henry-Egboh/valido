@@ -9,6 +9,7 @@ import dishpic2 from '../Assets/andrei-caliman-m_tgfIuMoyU-unsplash.jpg';
 import dishpic3 from '../Assets/mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg';
 import dishpic4 from '../Assets/louis-hansel-LIJujhJviMI-unsplash.jpg';
 import Menu from './Menu';
+import Coupon from './Coupon';
 
 
 function Main() {
@@ -162,6 +163,7 @@ function Main() {
     {/*menu content with form  */}
     <Container>
         <Menu />
+        <Coupon />
     </Container>
     </div>
   );
