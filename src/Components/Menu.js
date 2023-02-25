@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import FormComponent from './FormComponent';
 import customers from '../Assets/samsung-uk-YFLh6DV3hsk-unsplash.jpg';
-import Desserts from "./Desserts";
+// import Desserts from "./Desserts";
 
 const Menu = () => {
     const desserts = [
@@ -80,7 +80,7 @@ const Menu = () => {
                   <Col xs={12} sm={6} lg={4}>
                       <Card>
                           <Card.Header>Cheap Daily Menu Now!</Card.Header>
-                          <Desserts myList={desserts} />
+                          {/* <Desserts myList={desserts} /> */}
                       </Card>
                   </Col>
                   <Col xs={12} sm={6} lg={4}>

@@ -51,3 +51,13 @@
 .coupon-bg-1 {
   background-color: var(--dark-green);
 }
+
+.order-btn {
+  background-color: var(--dark-green);
+  color: #ccffdd;
+}
+
+.submit-btn {
+  background-color: var(--dark-red);
+  color: #ccffdd;
+}
