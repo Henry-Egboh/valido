@@ -38,9 +38,16 @@
   list-style: none;
 }
 
-.coupon-bg {
-  background-color: var(--dark-red);
+.coupon-bg, .coupon-bg-1 {
   color: var(--coupon-text);
   font-size: 1rem;
   font-weight: 300;
+}
+
+.coupon-bg {
+  background-color: var(--dark-red);
+}
+
+.coupon-bg-1 {
+  background-color: var(--dark-green);
 }
