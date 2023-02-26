@@ -5,7 +5,7 @@ const Desserts = (props) => {
                               .map((list, index) => {
                                 const newList = `${list.name} -- #${list.price}`;
                                 return (
-                                  <li className="li py-2">{newList}</li>
+                                  <li className="py-2">{newList}</li>
                               );
   });
   return ( 

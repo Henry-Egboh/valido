@@ -5,10 +5,30 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import FormComponent from './FormComponent';
 import customers from '../Assets/samsung-uk-YFLh6DV3hsk-unsplash.jpg';
+import { useState } from "react";
 // import Desserts from "./Desserts";
 
+
+// create a table menu
+const TableMenu = props => (
+      <>
+        {/* <tr>
+          <th>S/N</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Date Created</th>
+        </tr> */}
+        <tr>
+          <td>{props.id}</td>
+          <td>{props.name}</td>
+          <td>{props.price}</td>
+          <td>{props.createdAt}</td>
+        </tr>
+      </>
+)
+
 const Menu = () => {
-    const desserts = [
+    const menuList = [
   {
     id: 1,
     name: 'Jollof Rice',
@@ -46,44 +66,66 @@ const Menu = () => {
     createdAt: '2022-07-05'
   },
   {
-    id: 4,
+    id: 7,
     name: 'Okro Soup',
     price: 1435,
     createdAt: '2023-02-11'
   },
   {
-    id: 5,
+    id: 8,
     name: 'Salad',
     price: 4500,
     createdAt: '2023-02-09'
   },
   {
-    id: 6,
+    id: 9,
     name: 'Egusi Soup',
+    price: 860,
+    createdAt: '2022-03-26'
+  },
+  {
+    id: 10,
+    name: 'Ghana Soup',
     price: 860,
     createdAt: '2022-03-26'
   }
 ];
+
+// useState hook to acccess and change desserts menu
+const [foodMenu, setFoodMenu] = useState(menuList);
 
 
     return ( 
         <div className="my-5">
           <Container>
               <Row>
-                  <Col xs={12} sm={12} lg={4}>
+                  <Col xs={12} md={6} lg={4}>
                       <Card>
                           <Card.Header>Customers Satisfaction</Card.Header>
                           <Card.Img variant="top" src={customers} />
                       </Card>
                     {/* <img alt='customers' src={customers} className='customers'></img> */}
                   </Col>
-                  <Col xs={12} sm={6} lg={4}>
+                  <Col xs={12} md={6} lg={4} className="mt-4 mt-md-0">
                       <Card>
                           <Card.Header>Cheap Daily Menu Now!</Card.Header>
                           {/* <Desserts myList={desserts} /> */}
+                          <table>
+                            <tr>
+                              <th>S/N</th>
+                              <th>Name</th>
+                              <th>Price</th>
+                              <th>Date Created</th>
+                            </tr> 
+                            <tbody>
+                              {foodMenu.map((food) => (
+                                <TableMenu id= {food.id} name= {food.name} price= {food.price} createdAt={food.createdAt} />
+                              ))}
+                            </tbody>
+                          </table>
                       </Card>
                   </Col>
-                  <Col xs={12} sm={6} lg={4}>
+                  <Col xs={12} md={6} lg={4} className="mt-4 mt-lg-0">
                     <FormComponent />
                   </Col>
               </Row>
