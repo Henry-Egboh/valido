@@ -111,18 +111,27 @@ const [foodMenu, setFoodMenu] = useState(menuList);
                           <Card.Header>Cheap Daily Menu Now!</Card.Header>
                           {/* <Desserts myList={desserts} /> */}
                           <table>
+                            <thead>
                             <tr>
                               <th>S/N</th>
                               <th>Name</th>
                               <th>Price</th>
                               <th>Date Created</th>
                             </tr> 
+                            </thead>
                             <tbody>
                               {foodMenu.map((food) => (
                                 <TableMenu id= {food.id} name= {food.name} price= {food.price} createdAt={food.createdAt} />
                               ))}
                             </tbody>
                           </table>
+                          <form>
+                            <label htmlFor="sort">Sort by: </label>
+                            <select name="sort" id="sort">
+                              <option value="recent dates">Recent Dates</option>
+                              <option value="prices">Prices (ascending order)</option>
+                            </select>
+                          </form>
                       </Card>
                   </Col>
                   <Col xs={12} md={6} lg={4} className="mt-4 mt-lg-0">
