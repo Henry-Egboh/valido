@@ -12,12 +12,6 @@ import { useState } from "react";
 // create a table menu
 const TableMenu = props => (
       <>
-        {/* <tr>
-          <th>S/N</th>
-          <th>Name</th>
-          <th>Price</th>
-          <th>Date Created</th>
-        </tr> */}
         <tr>
           <td>{props.id}</td>
           <td>{props.name}</td>
@@ -94,6 +88,26 @@ const Menu = () => {
 // useState hook to acccess and change desserts menu
 const [foodMenu, setFoodMenu] = useState(menuList);
 
+const handleDate = foodMenu => {
+  const sorting = foodMenu
+                          .sort((a,b) => a.createdAt - b.createdAt)
+                          .map((food) => (
+                            <TableMenu id= {food.id} name= {food.name} price= {food.price} createdAt={food.createdAt} />
+                          ))
+                          console.log(sorting);
+  return sorting;
+}
+
+const handlePrice = foodMenu => {
+  const prices = foodMenu
+                      .sort((a, b) => (a.price > b.price ? 1 : -1))
+                      .map((food) => (
+                        <TableMenu id= {food.id} name= {food.name} price= {food.price} createdAt={food.createdAt} />
+                      ));
+                      console.log(prices);
+  return prices;
+}
+
 
     return ( 
         <div className="my-5">
@@ -120,16 +134,18 @@ const [foodMenu, setFoodMenu] = useState(menuList);
                             </tr> 
                             </thead>
                             <tbody>
-                              {foodMenu.map((food) => (
-                                <TableMenu id= {food.id} name= {food.name} price= {food.price} createdAt={food.createdAt} />
+                              {foodMenu
+                                        .sort((a, b) => (a.price > b.price ? 1 : -1))
+                                        .map((food, index) => (
+                                <TableMenu key={food.id} id={index} name= {food.name} price= {food.price} createdAt={food.createdAt} />
                               ))}
                             </tbody>
                           </table>
                           <form>
                             <label htmlFor="sort">Sort by: </label>
                             <select name="sort" id="sort">
-                              <option value="recent dates">Recent Dates</option>
-                              <option value="prices">Prices (ascending order)</option>
+                              <option onClick={handleDate} value="recent dates">Recent Dates</option>
+                              <option onClick={handlePrice} value="prices">Prices (ascending order)</option>
                             </select>
                           </form>
                       </Card>
