@@ -8,6 +8,7 @@
   --dark-red: rgb(217, 120, 28);
   --dark-green: hsl(180deg, 81%, 30%);
   --coupon-text: #ccffdd;
+  --white: #fff;
 }
 
 .logo {
@@ -54,27 +55,155 @@
 
 .order-btn {
   background-color: var(--dark-green);
-  color: #ccffdd;
+  color: var(--coupon-text);
 }
 
 .submit-btn {
   background-color: var(--dark-red);
-  color: #ccffdd;
+  color: var(--coupon-text);
 }
 
-.footer-text {
-  color: #fff;
-  font-weight: 400;
+/* ================================================FOOTER ============================== */
+
+footer {
+  color: var(--white);
+}
+
+/* .wrapper {
+  padding: 4rem 0rem;
+} */
+
+/* list items and text-img */
+.list-img {
+  /* padding: 4rem 1rem; */
+  margin: 4rem 0rem;
+}
+
+/* List items and subscribe section */
+.row-1 {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  margin-left: 4rem;
+}
+
+/* list items */
+.footer-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+footer ul li{
+  margin: 0.5rem 0rem;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--white);
+  border-bottom: 1px solid #ccffdd;
   font-size: 0.9rem;
+  transition: all 500ms ease-in-out;
 }
 
-.footer-text-1 {
-  color: #fff;
+footer ul li a:hover {
+  border-bottom: none;
+  color: var(--coupon-text);
+}
+
+/* section with image and text */
+.footer-text-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5rem;
+  margin: 4rem 0rem 0rem;
+}
+
+/* p tag  */
+.footer-text-img p {
+  font-size: 0.8rem;
   font-weight: 400;
-  font-size: 0.7rem;
+  margin-top: 0.8rem;
 }
 
-.footer-color {
+/* subscribe section */
+.subscribe-section {
+  display: grid;
+  justify-items: center;
+}
+
+/* contains logo-footer and subscribe form */
+.sub-sec {
+  margin: 4rem 0rem;
+}
+
+/* spacing subscribe form from logo-footer */
+.logo-footer {
+  margin: 2rem 0rem 0rem;
+}
+.hor-list ul {
+  display: flex;
+  column-gap: 2rem;
+}
+
+footer h4 {
   color: var(--dark-red);
   font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.sub-input, .butt {
+  outline: none;
+  border: none;
+}
+
+/* ==========================MEDIA QUERY ====================================================== */
+@media screen {
+  .row-1 {
+    grid-template-columns: 1fr;
+    margin-left: 0rem;
+  }
+  /* list items */
+  .footer-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* section with image and text */
+.footer-text-img {
+  grid-template-columns: repeat(2, 1fr);
+}
+/* pad list content and text-img */
+.list-img {
+  padding: 0rem 1rem;
+}
+}
+
+@media screen and (min-width: 552px) {
+  .footer-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+} 
+
+@media screen and (min-width: 768px) {
+  .row-1 {
+    grid-template-columns: 5fr 2fr;
+    margin-left: 4rem;
+  }
+  .footer-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* section with image and text */
+.footer-text-img {
+  grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media screen and (min-width: 992px) {
+  .row-1 {
+    grid-template-columns: 6fr 2fr;
+    margin-left: 4rem;
+  }
 }

@@ -1,161 +1,110 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import { Si42, SiAnalogue } from "react-icons/si";
+import { Si4Chan } from "react-icons/si";
+import { SiAlltrails } from "react-icons/si";
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
 
     return (
         <footer className='bg-dark'>
-            
-                <section>
-                    <Row>
-                        {/* col 1 row 1 */}
-                        <Col xs={12} sm={12} md={7} lg={8} className='py-5'>
-                            <Row className='mx-5 ps-5'>
-                            {/* first col */}
-                            <Col xs={6} md={4} lg={3} className="">
-                                <h6 className='footer-color'>Query Maker</h6>
-                            <Nav defaultActiveKey="/home" className="flex-column">
-                                <Nav.Link className='footer-text ps-0' href="/home">Solitude Pay</Nav.Link>
-                                <Nav.Link className='footer-text ps-0' eventKey="link-1">Cash via ATM</Nav.Link>
-                                <Nav.Link className='footer-text ps-0' eventKey="link-2">Free DOM Delivery</Nav.Link>
-                                <Nav.Link className='footer-text ps-0' eventKey="link-1">Ash Botller</Nav.Link>
-                                <Nav.Link className='footer-text ps-0' eventKey="link-2">Face Off Fact</Nav.Link>
-                                <Nav.Link className='footer-text ps-0' eventKey="link-1">Dancing Queen</Nav.Link>
-                                <Nav.Link className='footer-text ps-0' eventKey="link-2">Welcome Versace</Nav.Link>
-                            </Nav>
-                            </Col>
+            <div>
+                {/* row one */}
+            <main className='row-1'>
+                {/* col one */}
+                <main className='list-img'>
+                    <section className='footer-list'>
+                        <div>
+                            <h4>Check Out</h4>
+                            <ul>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Check Out</h4>
+                            <ul>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Check Out</h4>
+                            <ul>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Check Out</h4>
+                            <ul>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                                <li><Link to='/'>Restore Beat</Link></li>
+                            </ul>
+                        </div>
+                    </section>
 
-                            {/* second col */}
-                            <Col xs={6} md={4} lg={3} className="">
-                                <h6 className='footer-color ps-2'>Query Maker</h6>
-                            <Nav defaultActiveKey="/home" className="flex-column">
-                                <Nav.Link className='footer-text' eventKey="link-1">Cash via ATM</Nav.Link>
-                                <Nav.Link className='footer-text' href="/home">Solitude Pay</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-2">Free DOM Delivery</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-1">Ash Botller</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-2">Face Off Fact</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-1">Dancing Queen</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-2">Welcome Versace</Nav.Link>
-                            </Nav>
-                            </Col>
+                    <section className='footer-text-img'>
+                        <div>
+                            <Si42 className="fs-2" />
+                            <h4>React & Stuff</h4>
+                            <cite>Wuruku Learning</cite>
+                            <p>When you start well, just know that we will continue learning regardless and you will know.
+                            </p>
+                        </div>
+                        <div>
+                            <Si4Chan className="fs-2" />
+                            <h4>React & Stuff</h4>
+                            <cite>Wuruku Learning</cite>
+                            <p>When you start well, just know that we will continue learning regardless and you will know.
+                            </p>
+                        </div>
+                        <div>
+                            <SiAlltrails className="fs-2" />
+                            <h4>React & Stuff</h4>
+                            <cite>Wuruku Learning</cite>
+                            <p>When you start well, just know that we will continue learning regardless and you will know.
+                            </p>
+                        </div>
+                    </section>
+                </main>
 
-                            {/* third col */}
-                            <Col xs={6} md={4} lg={3} className="">
-                                <h6 className='footer-color ps-2'>Query Maker</h6>
-                            <Nav defaultActiveKey="/home" className="flex-column">
-                                <Nav.Link className='footer-text' eventKey="link-1">Cash via ATM</Nav.Link>
-                                <Nav.Link className='footer-text' href="/home">Solitude Pay</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-2">Free DOM Delivery</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-1">Ash Botller</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-2">Face Off Fact</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-1">Dancing Queen</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-2">Welcome Versace</Nav.Link>
-                            </Nav>
-                            </Col>
+                <main className='bg-light bg-opacity-25 wrapper subscribe-section'>
 
-                            {/* fourth col */}
-                            <Col xs={6} md={4} lg={3} className="">
-                                <h6 className='footer-color ps-2'>Query Maker</h6>
-                            <Nav defaultActiveKey="/home" className="flex-column">
-                                <Nav.Link className='footer-text' eventKey="link-1">Cash via ATM</Nav.Link>
-                                <Nav.Link className='footer-text' href="/home">Solitude Pay</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-2">Free DOM Delivery</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-1">Ash Botller</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-2">Face Off Fact</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-1">Dancing Queen</Nav.Link>
-                                <Nav.Link className='footer-text' eventKey="link-2">Welcome Versace</Nav.Link>
-                            </Nav>
-                            </Col>
-                            </Row>
-                            {/* ============================================== */}
-                            {/* second row  */}
-                            <Row className='mx-5 mt-5 ps-5 bg-light bg-opacity-25 py-5'>
-                                {/* 1st col */}
-                            <Col xs={6} sm={6} md={4} lg={4} className="">
-                                    <Nav defaultActiveKey="/home" className="flex-column">
-                                        <Nav.Link className='footer-text-1 ps-0' eventKey="link-1">Ash Botller</Nav.Link>
-                                        <Nav.Link className='footer-text-1 ps-0' eventKey="link-2">Face Off Fact</Nav.Link>
-                                        <Nav.Link className='footer-text-1 ps-0' eventKey="link-1">Dancing Queen</Nav.Link>
-                                        <Nav.Link className='footer-text-1 ps-0' eventKey="link-2">Welcome Versace</Nav.Link>
-                                    </Nav>
-                            </Col>
-                            {/* 2nd row */}
-                            <Col xs={6} sm={6} md={4} lg={4} className="">
-                                    <Nav defaultActiveKey="/home" className="flex-column">
-                                        <Nav.Link className='footer-text-1' eventKey="link-1">Ash Botller</Nav.Link>
-                                        <Nav.Link className='footer-text-1' eventKey="link-2">Face Off Fact</Nav.Link>
-                                        <Nav.Link className='footer-text-1' eventKey="link-1">Dancing Queen</Nav.Link>
-                                        <Nav.Link className='footer-text-1' eventKey="link-2">Welcome Versace</Nav.Link>
-                                    </Nav>
-                            </Col>
-                            {/* 3rd col */}
-                            <Col xs={6} sm={6} md={4} lg={4} className="">
-                                    <Nav defaultActiveKey="/home" className="flex-column">
-                                        <Nav.Link className='footer-text-1' eventKey="link-1">Ash Botller</Nav.Link>
-                                        <Nav.Link className='footer-text-1' eventKey="link-2">Face Off Fact</Nav.Link>
-                                        <Nav.Link className='footer-text-1' eventKey="link-1">Dancing Queen</Nav.Link>
-                                        <Nav.Link className='footer-text-1' eventKey="link-2">Welcome Versace</Nav.Link>
-                                    </Nav>
-                            </Col>
-                            </Row>
-                        </Col>
-                        {/* ========================================================================================== */}
-                        {/* col 2 row 1 */}
-                        <Col xs={12} sm={12} md={5} lg={4} className='bg-secondary bg-opacity-50 py-5'>
-                            {/* first row */}
-                            <Row>
-                                <Col xs={12}>
-                                    <div className='mb-4 d-flex flex-column align-items-center justify-content-center'>
-                                        <h4 className='text-light mb-3'>Subscribe</h4>
-                                        <Form className='d-flex gap-3'>
-                                            <Form.Group controlId="formBasicEmail">
-                                                {/* <Form.Label className='text-danger'>Subscribe</Form.Label> */}
-                                                <Form.Control type="email" placeholder="Enter email" />
-                                            </Form.Group>
-                                            <Button variant="success" type="submit">
-                                                Submit
-                                            </Button>
-                                        </Form>
-                                    </div>
-                                </Col>
-                            </Row>
-                            {/* second row */}
-                            <Row>
-                                {/* ist col */}
-                                <Col xs={6} className='d-flex justify-content-center'>
-                                <Nav defaultActiveKey="/home" className="flex-column">
-                                    <h6 className='footer-color ps-3'>Query Maker</h6>
-                                    <Nav.Link className='footer-text-1' eventKey="link-1">Cash via ATM</Nav.Link>
-                                    <Nav.Link className='footer-text-1' href="/home">Solitude Pay</Nav.Link>
-                                    <Nav.Link className='footer-text-1' eventKey="link-2">Free DOM Delivery</Nav.Link>
-                                    <Nav.Link className='footer-text-1' eventKey="link-1">Ash Botller</Nav.Link>
-                                    <Nav.Link className='footer-text-1' eventKey="link-2">Face Off Fact</Nav.Link>
-                                    <Nav.Link className='footer-text-1' eventKey="link-1">Dancing Queen</Nav.Link>
-                                    <Nav.Link className='footer-text-1' eventKey="link-2">Welcome Versace</Nav.Link>
-                                </Nav>
-                                </Col>
-                                {/* 2nd col */}
-                                <Col xs={6} className='d-flex justify-content-center'>
-                                <Nav defaultActiveKey="/home" className="flex-column">
-                                    <h6 className='footer-color ps-3'>Query Maker</h6>
-                                    <Nav.Link className='footer-text-1' eventKey="link-1">Cash via ATM</Nav.Link>
-                                    <Nav.Link className='footer-text-1' href="/home">Solitude Pay</Nav.Link>
-                                    <Nav.Link className='footer-text-1' eventKey="link-2">Free DOM Delivery</Nav.Link>
-                                    <Nav.Link className='footer-text-1' eventKey="link-1">Ash Botller</Nav.Link>
-                                    <Nav.Link className='footer-text-1' eventKey="link-2">Face Off Fact</Nav.Link>
-                                    <Nav.Link className='footer-text-1' eventKey="link-1">Dancing Queen</Nav.Link>
-                                    <Nav.Link className='footer-text-1' eventKey="link-2">Welcome Versace</Nav.Link>
-                                </Nav>
-                                </Col>
-                            </Row>
-                        </Col>
-                    </Row>
-                </section>
+                    <div className='sub-sec'> 
+                        <div className=''>
+                            <form>
+                                <input className='rounded p-2 sub-input' type='email' placeholder='Enter email' name='email' />
+                                <button className='p-2 btn-light butt rounded ms-2' type='submit'>Submit</button>
+                            </form>
+                        </div>
+                        <div className='logo-footer'>
+                            <SiAnalogue className="fs-2" />
+                            <h4>Valido Restaurant Ltd.</h4>
+                            <p>Recipe for everyone</p>
+                            <div className='hor-list'>
+                                <ul>
+                                    <li><Link to='/'>Mission</Link></li>
+                                    <li><Link to='/'>Vision</Link></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </main>
+            </div>
         </footer>
     );
 }
