@@ -61,3 +61,20 @@
   background-color: var(--dark-red);
   color: #ccffdd;
 }
+
+.footer-text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.footer-text-1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+.footer-color {
+  color: var(--dark-red);
+  font-weight: 500;
+}

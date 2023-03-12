@@ -1,5 +1,6 @@
 import NavComponent from './NavComponent';
 import Main from './Main';
+import Footer from './Footer';
 
 const Home = () => {
 
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <NavComponent />
             <Main />
+            <Footer />
         </div>
      );
 }
