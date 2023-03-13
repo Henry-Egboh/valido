@@ -1,6 +1,7 @@
 import { Si42, SiAnalogue } from "react-icons/si";
 import { Si4Chan } from "react-icons/si";
 import { SiAlltrails } from "react-icons/si";
+import { BsWhatsapp, BsTwitter, BsInstagram, BsFacebook, BsLinkedin } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
 
@@ -127,7 +128,17 @@ const Footer = () => {
                         <li><Link to='/'>CSS Grid is well suited for the layout</Link></li>
                     </ul>
                 </div>
-                <div></div>
+                <div>
+                    <p>Follow us:</p>
+                    <div className="d-flex gap-4 social">
+                        <Link to='/'><BsWhatsapp className="fs-4" /></Link>
+                        <Link to='/'><BsTwitter className="fs-4" /></Link>
+                        <Link to='/'><BsInstagram className="fs-4" /></Link>
+                        <Link to='/'><BsFacebook className="fs-4" /></Link>
+                        <Link to='/'><BsWhatsapp className="fs-4" /></Link>
+                        <Link to='/'><BsLinkedin className="fs-4" /></Link>
+                    </div>
+                </div>
             </main>
             
         </footer>

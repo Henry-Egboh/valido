@@ -1,3 +1,6 @@
+## Author
+### Henry-Egboh
+## Title
 # Valido Restaurant
 ## A web page for valido restaurant built with bootstrap framework and react library
 ### Form control was done for customer orders
