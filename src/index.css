@@ -133,6 +133,9 @@ footer ul li a:hover {
 .subscribe-section {
   display: grid;
   justify-items: center;
+  padding: 0rem 2rem;
+  border-left: 2px solid var(--dark-red);
+  box-shadow: 0px 0px 12px var(--white);
 }
 
 /* contains logo-footer and subscribe form */
@@ -155,10 +158,30 @@ footer h4 {
   font-size: 1.2rem;
   margin-top: 0.5rem;
 }
-
+/* sub input and btn */
 .sub-input, .butt {
   outline: none;
   border: none;
+  transition: all 200ms ease-in;
+}
+
+/* button style */
+.butt {
+  background-color: var(--dark-red);
+  color: var(--coupon-text);
+}
+
+/* input focus */
+.sub-input:focus {
+  border: 0.2rem solid var(--dark-red);
+}
+/* base content of the footer */
+.base-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* margin-left: 4rem; */
+  padding: 4rem 0rem 4rem 4rem;
+  background-color: var(--dark-green);
 }
 
 /* ==========================MEDIA QUERY ====================================================== */

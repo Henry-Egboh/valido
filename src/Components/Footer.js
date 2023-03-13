@@ -8,7 +8,6 @@ const Footer = () => {
 
     return (
         <footer className='bg-dark'>
-            <div>
                 {/* row one */}
             <main className='row-1'>
                 {/* col one */}
@@ -84,10 +83,11 @@ const Footer = () => {
                 <main className='bg-light bg-opacity-25 wrapper subscribe-section'>
 
                     <div className='sub-sec'> 
-                        <div className=''>
+                        <div>
+                            <h2 className="fs-5 mb-3 text-center">Subscribe</h2>
                             <form>
-                                <input className='rounded p-2 sub-input' type='email' placeholder='Enter email' name='email' />
-                                <button className='p-2 btn-light butt rounded ms-2' type='submit'>Submit</button>
+                                <input className='shadow rounded p-2 sub-input' type='email' placeholder='Enter email' name='email' />
+                                <button className='p-2 butt rounded ms-2 mt-3 mt-xxl-0' type='submit'>Submit</button>
                             </form>
                         </div>
                         <div className='logo-footer'>
@@ -104,7 +104,32 @@ const Footer = () => {
                     </div>
                 </main>
             </main>
-            </div>
+            {/* row two */}
+            <main className="base-footer">
+                <div>
+                    <ul>
+                        <li><Link to='/'>Vanilla Javascript</Link></li>
+                        <li><Link to='/'>Bootstrap is complex for this</Link></li>
+                        <li><Link to='/'>CSS Grid is well suited for the layout</Link></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><Link to='/'>Vanilla Javascript</Link></li>
+                        <li><Link to='/'>Bootstrap is complex for this</Link></li>
+                        <li><Link to='/'>CSS Grid is well suited for the layout</Link></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><Link to='/'>Vanilla Javascript</Link></li>
+                        <li><Link to='/'>Bootstrap is complex for this</Link></li>
+                        <li><Link to='/'>CSS Grid is well suited for the layout</Link></li>
+                    </ul>
+                </div>
+                <div></div>
+            </main>
+            
         </footer>
     );
 }
