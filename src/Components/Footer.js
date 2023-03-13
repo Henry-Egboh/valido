@@ -88,7 +88,7 @@ const Footer = () => {
                             <h2 className="fs-5 mb-3 text-center">Subscribe</h2>
                             <form>
                                 <input className='shadow rounded p-2 sub-input' type='email' placeholder='Enter email' name='email' />
-                                <button className='p-2 butt rounded ms-2 mt-3 mt-xxl-0' type='submit'>Submit</button>
+                                <button className='p-2 butt rounded ms-1 mt-3' type='submit'>Submit</button>
                             </form>
                         </div>
                         <div className='logo-footer'>
@@ -121,14 +121,14 @@ const Footer = () => {
                         <li><Link to='/'>CSS Grid is well suited for the layout</Link></li>
                     </ul>
                 </div>
-                <div>
+                <div className="">
                     <ul>
                         <li><Link to='/'>Vanilla Javascript</Link></li>
                         <li><Link to='/'>Bootstrap is complex for this</Link></li>
                         <li><Link to='/'>CSS Grid is well suited for the layout</Link></li>
                     </ul>
                 </div>
-                <div>
+                <div className="">
                     <p>Follow us:</p>
                     <div className="d-flex gap-4 social">
                         <Link to='/'><BsWhatsapp className="fs-4" /></Link>

@@ -22,7 +22,6 @@ const MainComponent = () => {
                         <Card.Body>
                             <Card.Title className="h6 title-color">Salad Dish</Card.Title>
                             <Card.Text className="card-text">
-                            This comes with all you can dream of with an excellent finish that gives you that yummy taste that you cant resist.
                             What more can we say if only you are ready for a bite, you will never say never.
                             </Card.Text>
                             <ListGroup variant="flush">
@@ -39,7 +38,6 @@ const MainComponent = () => {
                         <Card.Body>
                             <Card.Title className="h6 title-color">Roasted Potatoes</Card.Title>
                             <Card.Text className="card-text">
-                            This comes with all you can dream of with an excellent finish that gives you that yummy taste that you cant resist.
                             What more can we say if only you are ready for a bite, you will never say never.
                             </Card.Text>
                             <ListGroup variant="flush">
@@ -56,7 +54,6 @@ const MainComponent = () => {
                         <Card.Body>
                             <Card.Title className="h6 title-color">Calada fime</Card.Title>
                             <Card.Text className="card-text">
-                            This comes with all you can dream of with an excellent finish that gives you that yummy taste that you cant resist.
                             What more can we say if only you are ready for a bite, you will never say never.
                             </Card.Text>
                             <ListGroup variant="flush">
@@ -73,7 +70,6 @@ const MainComponent = () => {
                         <Card.Body>
                             <Card.Title className="h6 title-color">Beef Roll</Card.Title>
                             <Card.Text className="card-text">
-                            This comes with all you can dream of with an excellent finish that gives you that yummy taste that you cant resist.
                             What more can we say if only you are ready for a bite, you will never say never.
                             </Card.Text>
                             <ListGroup variant="flush">
@@ -94,11 +90,10 @@ const MainComponent = () => {
                         <Card.Body>
                             <Card.Title className="h6 title-color">Salad Dish</Card.Title>
                             <Card.Text className="card-text">
-                            This comes with all you can dream of with an excellent finish that gives you that yummy taste that you cant resist.
                             What more can we say if only you are ready for a bite, you will never say never.
                             </Card.Text>
                             <ListGroup variant="flush">
-                                <ListGroup.Item>#2280.00 <span className='ps-3 text-muted text-decoration-line-through fw-lighter fst-italic card-text'>#4350.00</span></ListGroup.Item>
+                                <ListGroup.Item>#6650.00 <span className='ps-3 text-muted text-decoration-line-through fw-lighter fst-italic card-text'>#8700.00</span></ListGroup.Item>
                             </ListGroup>
                             <Button className='w-100 order-btn'>Order Now!</Button>
                         </Card.Body>
@@ -111,11 +106,10 @@ const MainComponent = () => {
                         <Card.Body>
                             <Card.Title className="h6 title-color">Roasted Potatoes</Card.Title>
                             <Card.Text className="card-text">
-                            This comes with all you can dream of with an excellent finish that gives you that yummy taste that you cant resist.
                             What more can we say if only you are ready for a bite, you will never say never.
                             </Card.Text>
                             <ListGroup variant="flush">
-                                <ListGroup.Item>#2280.00 <span className='ps-3 text-muted text-decoration-line-through fw-lighter fst-italic card-text'>#4350.00</span></ListGroup.Item>
+                                <ListGroup.Item>#6650.00 <span className='ps-3 text-muted text-decoration-line-through fw-lighter fst-italic card-text'>#8700.00</span></ListGroup.Item>
                             </ListGroup>
                             <Button className='w-100 order-btn'>Order Now!</Button>
                         </Card.Body>
@@ -128,11 +122,10 @@ const MainComponent = () => {
                         <Card.Body>
                             <Card.Title className="h6 title-color">Calada fime</Card.Title>
                             <Card.Text className="card-text">
-                            This comes with all you can dream of with an excellent finish that gives you that yummy taste that you cant resist.
                             What more can we say if only you are ready for a bite, you will never say never.
                             </Card.Text>
                             <ListGroup variant="flush">
-                                <ListGroup.Item>#2280.00 <span className='ps-3 text-muted text-decoration-line-through fw-lighter fst-italic card-text'>#4350.00</span></ListGroup.Item>
+                                <ListGroup.Item>#6650.00 <span className='ps-3 text-muted text-decoration-line-through fw-lighter fst-italic card-text'>#8700.00</span></ListGroup.Item>
                             </ListGroup>
                             <Button className='w-100 order-btn'>Order Now!</Button>
                         </Card.Body>
@@ -145,11 +138,10 @@ const MainComponent = () => {
                         <Card.Body>
                             <Card.Title className="h6 title-color">Beef Roll</Card.Title>
                             <Card.Text className="card-text">
-                            This comes with all you can dream of with an excellent finish that gives you that yummy taste that you cant resist.
                             What more can we say if only you are ready for a bite, you will never say never.
                             </Card.Text>
                             <ListGroup variant="flush">
-                                <ListGroup.Item>#2280.00 <span className='ps-3 text-muted text-decoration-line-through fw-lighter fst-italic card-text'>#4350.00</span></ListGroup.Item>
+                                <ListGroup.Item>#6650.00 <span className='ps-3 text-muted text-decoration-line-through fw-lighter fst-italic card-text'>#8700.00</span></ListGroup.Item>
                             </ListGroup>
                             <Button className='w-100 order-btn'>Order Now!</Button>
                         </Card.Body>

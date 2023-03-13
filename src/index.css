@@ -90,6 +90,7 @@ footer {
 .footer-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
 }
 
 footer ul {
@@ -118,7 +119,7 @@ footer ul li a:hover {
 .footer-text-img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 1.5rem;
+  gap: 2rem 1.5rem;
   margin: 4rem 0rem 0rem;
 }
 
@@ -182,6 +183,7 @@ footer h4 {
   padding: 4rem 0rem 4rem 4rem;
   background-color: var(--dark-green);
   box-shadow: 0px 0px 12px var(--white);
+  gap: 4rem 2rem;
 }
 
 .social a {
@@ -200,13 +202,20 @@ footer h4 {
     grid-template-columns: repeat(2, 1fr);
   }
   /* section with image and text */
-.footer-text-img {
-  grid-template-columns: repeat(2, 1fr);
-}
+  .footer-text-img {
+    grid-template-columns: repeat(2, 1fr);
+  }
 /* pad list content and text-img */
-.list-img {
-  padding: 0rem 1rem;
+  .list-img {
+    padding: 0rem 1rem;
+  }
+
+  /* base content of the footer */
+.base-footer {
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4rem 1rem 4rem 1rem;
 }
+
 }
 
 @media screen and (min-width: 552px) {
@@ -224,14 +233,24 @@ footer h4 {
     grid-template-columns: repeat(4, 1fr);
   }
   /* section with image and text */
-.footer-text-img {
-  grid-template-columns: repeat(3, 1fr);
-}
+  .footer-text-img {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .base-footer {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .row-1 {
     grid-template-columns: 6fr 2fr;
     margin-left: 4rem;
+  }
+
+  .base-footer {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 4rem 1rem 4rem 4rem;
   }
 }
